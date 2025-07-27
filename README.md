@@ -20,10 +20,19 @@ To understand the characteristics and trends within the dataset, several meaning
 
 2.  **Relationship between Variables (Scatter Plot):** A scatter plot was generated to illustrate the correlation between 2023 and 2024 dengue cases. This visualization was critical in understanding the linearity (or lack thereof) of the relationship, revealing that while some countries followed a general trend, others experienced outlier outbreaks. This directly affected the choice and performance of the linear regression model.
 
-*(Note: The actual visualization images are generated during the Colab notebook execution and can be viewed there or if you saved them locally.)*
+## Data Visualizations
 
-![Bar Plots of Dengue Cases](images/dengue_cases_bar_plots.png)
-![Scatter Plot 2023 vs 2024](images/dengue_cases_2023_vs_2024_scatter.png)
+To understand the characteristics and trends within the dataset, several meaningful visualizations were created, which directly informed the modeling process:
+
+1.  **Variable Distributions (Bar Plots):** These plots illustrate the total dengue cases per country, as well as the distribution of cases for 2023 and 2024 individually. They highlight countries with the highest disease burden and reveal significant year-over-year changes.
+
+    ![Dengue Total Cases by Country (2023-2024)](images/dengue_total_cases_bar_plot.png)
+    ![Dengue Cases in 2023 by Country](images/dengue_2023_cases_bar_plot.png)
+    ![Dengue Cases in 2024 by Country](images/dengue_2024_cases_bar_plot.png)
+
+2.  **Relationship between Variables (Scatter Plot):** This visualization shows the correlation between 2023 and 2024 dengue cases. It was crucial for understanding the linearity of the relationship and identifying outlier outbreaks that informed the model's limitations.
+
+    ![Dengue Cases: 2023 vs 2024 Scatter Plot](images/dengue_2023_vs_2024_scatter_plot.png)
 
 ## Linear Regression Model Implementation
 
