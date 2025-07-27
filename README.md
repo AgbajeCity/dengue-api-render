@@ -22,6 +22,9 @@ To understand the characteristics and trends within the dataset, several meaning
 
 *(Note: The actual visualization images are generated during the Colab notebook execution and can be viewed there or if you saved them locally.)*
 
+![Bar Plots of Dengue Cases](images/dengue_cases_bar_plots.png)
+![Scatter Plot 2023 vs 2024](images/dengue_cases_2023_vs_2024_scatter.png)
+
 ## Linear Regression Model Implementation
 
 This project implements and compares three different regression models to predict 2024 dengue cases based on 2023 figures:
@@ -37,7 +40,7 @@ The model with the least loss (highest R-squared score) among these three was se
 The best-performing model is exposed via a FastAPI web API, allowing for external prediction requests.
 
 * **API Endpoint:** `/predict` (POST request)
-* **Public URL:** Your deployed API will be available at a public URL provided by Render (e.g., `https://your-service-name.onrender.com`).
+* **Public URL:** Your deployed API will be available at a public URL provided by Render (e.g., `https://dengue-prediction-api-agbajecity.onrender.com`).
 * **Swagger UI Documentation:** The interactive API documentation is accessible at the public URL followed by `/docs` (e.g., `https://your-service-name.onrender.com/docs`).
 * **CORS Middleware:** Implemented to allow cross-origin requests.
 * **Input Constraints:** Request variables are strongly typed and include range constraints using Pydantic's `BaseModel` to ensure data validity (e.g., `cases_2023` as a float with a range from >0 to <=50000).
