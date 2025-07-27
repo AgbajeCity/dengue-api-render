@@ -5,5 +5,3 @@ joblib
 scikit-learn
 pandas
 numpy
-
-print("requirements.txt created.")
